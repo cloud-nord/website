@@ -225,9 +225,8 @@ const jsonld = {
 
           <div class="footer-links">
             <ul class="links-list">
-              <li><a href="/a-propos">L'équipe DevLille</a></li>
-              <li><a href="/press">On parle de nous</a></li>
-              <li><a href="mailto:contact@devlille.fr">Contactez-nous</a></li>
+              <li><a href="/a-propos">L'équipe Cloud Nord</a></li>
+              <li><a href="mailto:team@cloudnord.fr">Contactez-nous</a></li>
               {
                 config.enabled.sponsoring && (
                   <li>
@@ -236,54 +235,47 @@ const jsonld = {
                 )
               }
               <li><a href="/code-conduite">Code de conduite</a></li>
-              <li><a href="/promo">Ressources graphiques</a></li>
-              {
-                config.enabled.welovedevs && (
-                  <li>
-                    <a href="/wld">Offres d'emploi</a>
-                  </li>
-                )
-              }
+              <!--<li><a href="/promo">Ressources graphiques</a></li>-->
             </ul>
-            <ul class="links-list editions">
-              {
-                editions.map((edition) => (
-                  <li>
-                    <a href={edition.url}>{edition.year}</a>
-                  </li>
-                ))
-              }
-              <!--li>
-                          {%- for edition in collections.editions -%}
-                        
-                        {%- endfor -%}
-                            <a href="https://devfest-2017.gdglille.org/">2017</a>
-                        </li-->
-            </ul>
+            <!--<ul class="links-list editions">-->
+            <!--  {-->
+            <!--    editions.map((edition) => (-->
+            <!--      <li>-->
+            <!--        <a href={edition.url}>{edition.year}</a>-->
+            <!--      </li>-->
+            <!--    ))-->
+            <!--  }-->
+            <!--  &lt;!&ndash;li>-->
+            <!--              {%- for edition in collections.editions -%}-->
+
+            <!--            {%- endfor -%}-->
+            <!--                <a href="https://devfest-2017.gdglille.org/">2017</a>-->
+            <!--            </li&ndash;&gt;-->
+            <!--</ul>-->
           </div>
         </div>
         <div class="related">
           <ul class="sm-list">
+            <!--<li class="show-icons">-->
+            <!--  <a href="https://bsky.app/profile/devlille.fr">-->
+            <!--    <svg role="img" width="24" height="24">-->
+            <!--      <title>DevLille sur BleuSky</title>-->
+            <!--      <use href="/img/sprite.svg#ic-bluesky"></use>-->
+            <!--    </svg></a-->
+            <!--  >-->
+            <!--</li>-->
+            <!--<li class="show-icons">-->
+            <!--  <a href="https://piaille.fr/@devlille">-->
+            <!--    <svg role="img" width="24" height="24">-->
+            <!--      <title>DevLille sur Mastodon</title>-->
+            <!--      <use href="/img/sprite.svg#ic-mastodon"></use>-->
+            <!--    </svg></a-->
+            <!--  >-->
+            <!--</li>-->
             <li class="show-icons">
-              <a href="https://bsky.app/profile/devlille.fr">
+              <a href="https://www.linkedin.com/company/cloud-nord/">
                 <svg role="img" width="24" height="24">
-                  <title>DevLille sur BleuSky</title>
-                  <use href="/img/sprite.svg#ic-bluesky"></use>
-                </svg></a
-              >
-            </li>
-            <li class="show-icons">
-              <a href="https://piaille.fr/@devlille">
-                <svg role="img" width="24" height="24">
-                  <title>DevLille sur Mastodon</title>
-                  <use href="/img/sprite.svg#ic-mastodon"></use>
-                </svg></a
-              >
-            </li>
-            <li class="show-icons">
-              <a href="https://www.linkedin.com/company/devlille/">
-                <svg role="img" width="24" height="24">
-                  <title>DevLille sur LinkedIn</title>
+                  <title>CloudNord sur LinkedIn</title>
                   <use href="/img/sprite.svg#ic-linkedin"></use>
                 </svg></a
               >
