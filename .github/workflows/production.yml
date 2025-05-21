@@ -1,6 +1,7 @@
 name: CI for production
 
 on:
+  workflow_dispatch: 
   repository_dispatch:
   schedule:
     - cron: "30 1 * * *"
