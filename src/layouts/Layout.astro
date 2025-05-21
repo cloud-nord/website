@@ -55,7 +55,7 @@ const offers = [
 const jsonld = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: `DevLille ${config.edition}`,
+  name: `Cloud Nord ${config.edition}`,
   startDate: `${config.formattedStartDate}T08:00+02:00`,
   endDate: `${config.formattedEndDate}}T19:00+02:00`,
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
@@ -76,8 +76,8 @@ const jsonld = {
   offers: offers,
   organizer: {
     "@type": "Organization",
-    name: "DevLille",
-    url: "https://devlille.fr/",
+    name: "Cloud Nord",
+    url: "https://cloudnord.fr/",
   },
 };
 ---
@@ -90,7 +90,7 @@ const jsonld = {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="DevLille, Conférence, Web, Mobile, Cloud, Quickies"
+      content="Cloud Nord, Conférence, Cloud, DevOps"
     />
     <meta name="description" content={ogDescription} />
     <meta name="theme-color" content="#006D6D" />
@@ -99,9 +99,8 @@ const jsonld = {
     <meta property="og:description" content={ogDescription} />
     <meta property="og:image" content={ogImage} />
 
-    <link href="/img/favicon.svg" type="image/svg+xml" rel="icon" />
-    <link href="/img/favicon.png" type="image/png" rel="icon" />
-    <title>{title} - DEVLILLE {config.edition}</title>
+    <link href="/img/cloud_nord_logo.jpg" type="image/jpg" rel="icon" />
+    <title>{title} - Cloud Nord {config.edition}</title>
 
     <!-- ✅ Correct CSS Path -->
     <link rel="stylesheet" href="/css/main.css" />
@@ -110,7 +109,8 @@ const jsonld = {
     <script
       src="https://cdn.metricalp.com/event/metricalp.js"
       data-tid="mam196"
-      defer></script>
+      defer
+    />
 
     <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
 
@@ -124,15 +124,16 @@ const jsonld = {
         <h1>
           {
             currSection === "index" ? (
-              <img src="/img/logodl.svg" alt={`DevLille ${config.edition}`} />
+              <img src="/img/cloud-nord-banner_thumb.png" alt={`Cloud Nord ${config.edition}`} />
             ) : (
-              <a href="/index.html" aria-label="DevLille: Retour à l'accueil">
-                <img src="/img/logodl.svg" alt={`DevLille ${config.edition}`} />
+              <a href="/index.html" aria-label="Cloud Nord: Retour à l'accueil">
+                <img src="/img/cloud-nord-banner_thumb.png" alt={`Cloud Nord ${config.edition}`} />
               </a>
             )
           }
         </h1>
         <div>
+          <p>Cloud Nord 2025</p>
           <p>
             <time datetime={config.formattedStartDate}>
               {config.date}
