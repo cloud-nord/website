@@ -4,31 +4,25 @@ import Layout from "../layouts/Layout.astro";
 import config from "../config/config.ts";
 
 const og = {
-  ogTitle: "DevLille",
+  ogTitle: "Cloud Nord",
   ogDescription:
-    "Le DevLille est une conférence de deux jours autour des sujets Web, Mobile et Cloud.",
+    "Cloud Nord est la conférence tech consacrée au Cloud et au DevOps.",
   ogImage: "https://devlille.fr/img/logo-full.svg",
 };
 ---
 
-<Layout title="DevLille" currSection="index" og={og}>
+<Layout title="Cloud Nord" currSection="index" og={og}>
   <div class="group">
     <div class="presentation">
       <p>
         <strong
-          >Devfest Lille devient
-          <span class="stressed back">DevLille !</span>
+          >Cloud Nord revient en 2025 dans un nouveau format !
         </strong>
         <p>
-          Nous changeons seulement de nom, mais tout le reste demeure inchangé :
-          le même lieu, le même format, et la même équipe de bénévoles.
+          Cette année, nous changeons de lieu, rendez-vous à l'Université Catholique de Lille !
+          2&nbsp;magnifiques amphithéâtres pour vivre au mieux la conférence.
         </p>
         <p>
-          Notre ambition reste intacte : vous proposer deux journées de
-          conférences tech enrichies d'une dimension
-          <strong class="stressed">humaine</strong> et <strong class="stressed"
-            >environnementale</strong
-          >, en harmonie avec les enjeux du monde actuel.
         </p>
         <p class="register">
           <a
@@ -63,27 +57,23 @@ const og = {
         }
       </p>
     </div>
-    <!--div class="cfp">
+    <div class="cfp">
       <p>
         <a href={config.cfpUrl + config.edition} lang="en"> Call for Paper</a>
         ouvert du
         {config.cfpStartedDate} jusqu'au {config.cfpEndedDate}
         {config.edition}!
       </p>
-    </div-->
+    </div>
 
     <div class="stats">
       <h2 class="no-display">
-        Le DevLille Lille {config.edition} en chiffres
+        Cloud Nord {config.edition} en chiffres
       </h2>
       <ul>
         <li>
           <strong>{config.numberOfPeople}</strong>
           <span>participants</span>
-        </li>
-        <li>
-          <strong>{config.numberOfSpeaker}</strong>
-          <span>speakers</span>
         </li>
         <li>
           <strong>{config.numberOfTalks}</strong>
@@ -98,22 +88,9 @@ const og = {
   </div>
 
   <div class="with-news">
-    <!-- <section class="news">
-          <h2>News</h2>
-          <article class="h-entry">
-            <h3>N'oubliez pas la soirée du 6 juin !</h3>
-            <p>
-              Les équipes du Devfest Lille vous invitent à la 
-              <strong class="stressed">première soirée Devfest Lille</strong> 
-              le 6 juin à 18h30 au 
-              <a href="https://grand-scene.com/">Grand-Scène</a>.
-            </p>
-          </article>
-        </section> -->
-
     <div class="fixed">
       <div class="decor venue">
-        <h2>Un lieu privilégié : <strong>Lille Grand Palais</strong></h2>
+        <h2>Un nouveau lieu : <strong>La catho</strong></h2>
         <div class="content">
           <p class="illustration">
             <picture>
@@ -128,16 +105,13 @@ const og = {
           </p>
           <div>
             <p>
-              Lille Grand Palais est un lieu incontournable avec un espace de
-              plus de 1900m2 et nous permettant d'accueillir plus de {
-                config.numberOfPeople
-              } personnes.
+              La catho nous accueille avec 2 magnifiques amphithéâtres pouvant accueillir chacun plus de 200 personnes.
             </p>
             <p class="read-more">
               <a
                 rel="noreferrer noopener"
                 target="_blank"
-                href="https://goo.gl/maps/cBSP9yZSHtMZuW9BA"
+                href="https://maps.app.goo.gl/LqwrkbpHuvL7zEve9"
               >
                 Comment y aller</a
               >
@@ -227,64 +201,6 @@ const og = {
         </div>
       </div>
 
-      <div class="decor">
-        <h2>Une sensibilisation à la programmation</h2>
-        <div class="content">
-          <p class="illustration">
-            <picture>
-              <img
-                loading="lazy"
-                src="https://framalibre.org/images/logo/Scratch.png"
-                alt="Logo du logiciel Scratch"
-              />
-            </picture>
-          </p>
-          <div>
-            <p>
-              Animée par <strong class="stressed"> Exotec</strong> et en partenariat
-              avec <strong class="stressed">Zenika</strong>, nous organisons
-              pour la première année une sensibilisation à la programmation pour
-              des lycées et des collèges. Environ 60 élèves vont ainsi découvrir
-              notre métier et rencontrer certains partenaires.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="decor">
-        <h2>Des Ateliers Fresque du Climat et My Little Big Map</h2>
-        <div class="content">
-          <p class="illustration">
-            <picture>
-              <img
-                loading="lazy"
-                src="https://admin.davidson.fr/wp-content/uploads/lbmap.png"
-                alt="Logo de l'atelier My Little Big Map"
-              />
-            </picture>
-          </p>
-          <div>
-            <p>
-              Afin de continuer notre sensibilisation sur les conséquences du
-              numérique sur notre planète, des ateliers <strong
-                class="stressed"
-              >
-                Fresque du Climat</strong
-              > et <strong class="stressed">My Little Big Map</strong>
-              seront proposés.
-            </p>
-            <p class="read-more">
-              <a
-                rel="noreferrer noopener"
-                target="_blank"
-                href="https://devlille.fr/agenda"
-              >
-                Accéder à l'agenda</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </Layout>
